@@ -1,0 +1,24 @@
+info:
+  name: wizard2
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: http://localhost:8080/api/wizards
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Lucius Malfoy",
+        "house": "Slytherin",
+        "patronus": "Pavo Real",
+        "isDeatheater": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
